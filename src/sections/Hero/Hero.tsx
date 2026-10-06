@@ -40,7 +40,6 @@ const Hero = () => {
             <div className="hero__actions">
               <Button
                 href="#contact"
-                icon="→"
               >
                 Get Started
               </Button>

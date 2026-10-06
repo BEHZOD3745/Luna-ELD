@@ -1,38 +1,27 @@
-import type {
-  AnchorHTMLAttributes,
-  ButtonHTMLAttributes,
-  ReactNode,
-} from "react";
-
+import type { ReactNode } from "react";
 import "./Button.scss";
 
-type ButtonVariant = "primary" | "secondary" | "ghost";
-
-interface CommonProps {
+interface ButtonProps {
   children: ReactNode;
-  variant?: ButtonVariant;
+  variant?: "primary" | "secondary" | "ghost";
   className?: string;
-  icon?: ReactNode;
+
+  href?: string;
+  type?: "button" | "submit" | "reset";
+
+  disabled?: boolean;
+
+  onClick?: () => void;
 }
-
-type LinkButtonProps = CommonProps &
-  AnchorHTMLAttributes<HTMLAnchorElement> & {
-    href: string;
-  };
-
-type NativeButtonProps = CommonProps &
-  ButtonHTMLAttributes<HTMLButtonElement> & {
-    href?: never;
-  };
-
-type ButtonProps = LinkButtonProps | NativeButtonProps;
 
 const Button = ({
   children,
   variant = "primary",
   className = "",
-  icon,
-  ...props
+  href,
+  type = "button",
+  disabled = false,
+  onClick,
 }: ButtonProps) => {
   const classes = [
     "button",
@@ -42,39 +31,26 @@ const Button = ({
     .filter(Boolean)
     .join(" ");
 
-  if ("href" in props && props.href) {
+  if (href) {
     return (
       <a
+        href={href}
         className={classes}
-        {...props}
+        onClick={onClick}
       >
-        <span className="button__label">
-          {children}
-        </span>
-
-        {icon && (
-          <span className="button__icon">
-            {icon}
-          </span>
-        )}
+        {children}
       </a>
     );
   }
 
   return (
     <button
+      type={type}
       className={classes}
-      {...props}
+      disabled={disabled}
+      onClick={onClick}
     >
-      <span className="button__label">
-        {children}
-      </span>
-
-      {icon && (
-        <span className="button__icon">
-          {icon}
-        </span>
-      )}
+      {children}
     </button>
   );
 };

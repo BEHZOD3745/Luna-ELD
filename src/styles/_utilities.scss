@@ -1,0 +1,14 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.section {
+  padding-block: 80px;
+
+  @include tablet {
+    padding-block: 88px;
+  }
+
+  @include mobile {
+    padding-block: 64px;
+  }
+}

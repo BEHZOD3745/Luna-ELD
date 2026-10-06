@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+body {
+  font-family: $font-main;
+  color: $black;
+  background: $background;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+p {
+  color: $text-secondary;
+}

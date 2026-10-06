@@ -1,0 +1,97 @@
+@use "../../styles/variables" as *;
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  padding: 30px;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+  background: #fff;
+  transition: 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 100, 30, 0.22);
+    box-shadow:
+      0 16px 40px rgba(16, 24, 40, 0.07);
+
+    .resource-card__download img {
+      transform: translateY(3px);
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    background: $orange-light;
+
+    img {
+      width: 23px;
+      height: 23px;
+      object-fit: contain;
+    }
+  }
+
+  &__type {
+    padding: 6px 9px;
+    border-radius: 999px;
+    background: $background-soft;
+    color: $text-muted;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  &__content {
+    margin-top: 28px;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+  }
+
+  &__description {
+    margin-top: 12px;
+    color: $text-secondary;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  &__download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    margin-top: auto;
+    padding-top: 28px;
+    color: $black;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+
+    img {
+      width: 17px;
+      height: 17px;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}

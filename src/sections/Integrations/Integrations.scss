@@ -1,0 +1,83 @@
+@use "../../styles/variables"as *;
+@use "../../styles/mixins"as *;
+
+.integrations {
+
+    .section-title {
+        transform: translateY(20px);
+        transition: 0.7s $ease-out;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 52px;
+    }
+
+    &__card {
+        min-height: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border: 1px solid $border;
+        border-radius: $radius-md;
+        transition: 0.25s ease;
+        transform: translateY(18px);
+
+        &:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 100, 30, 0.28);
+            box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+        }
+        &:hover .integrations__logo {
+            opacity: 1;
+            filter: grayscale(0);
+        }
+    }
+
+    &__logo {
+        display: block;
+        width: 100%;
+        max-width: 130px;
+        max-height: 38px;
+        object-fit: contain;
+        opacity: 0.68;
+        filter: grayscale(100%);
+        transition: 0.25s ease;
+    }
+
+    @include desktop {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @include mobile {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 36px;
+        }
+
+        &__card {
+            min-height: 96px;
+            padding: 16px;
+        }
+
+        &__logo {
+            max-width: 110px;
+        }
+    }
+
+    @include mobile-sm {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+
+        &__card {
+            min-height: 88px;
+        }
+    }
+}

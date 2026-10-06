@@ -1,0 +1,26 @@
+@use "../../styles/variables"as *;
+
+.badge {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 100, 30, 0.18);
+    border-radius: 999px;
+    background: $orange-soft;
+    color: $orange;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+
+    &__dot {
+        flex-shrink: 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: $orange;
+        box-shadow:
+            0 0 0 5px rgba(255, 100, 30, 0.1);
+    }
+}

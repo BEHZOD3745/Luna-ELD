@@ -1,0 +1,46 @@
+@use "../../styles/variables"as *;
+@use "../../styles/mixins"as *;
+
+.faq {
+    background: $background-soft;
+
+    &__layout {
+        display: grid;
+        grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+        align-items: center;
+        gap: 90px;
+    }
+
+    &__heading {
+        position: sticky;
+        top: 120px;
+    }
+
+    &__list {
+        border-top: 1px solid $border;
+    }
+
+    @include desktop {
+        &__layout {
+            gap: 60px;
+        }
+    }
+
+    @include tablet {
+        &__layout {
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+
+        &__heading {
+            position: static;
+            max-width: 700px;
+        }
+    }
+
+    @include mobile {
+        &__layout {
+            gap: 34px;
+        }
+    }
+}

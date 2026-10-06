@@ -1,0 +1,24 @@
+@use "../../styles/variables" as *;
+
+.trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: $text-secondary;
+  font-size: 13px;
+  font-weight: 500;
+
+  &__icon {
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $orange-light;
+    color: $orange;
+    font-size: 11px;
+    font-weight: 700;
+  }
+}

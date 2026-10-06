@@ -1,0 +1,16 @@
+@use "./reset";
+@use "./typography";
+@use "./utilities";
+
+:root {
+  --orange: #ff641e;
+  --orange-hover: #e95412;
+  --orange-light: #fff2eb;
+  --orange-soft: #fff8f4;
+
+  --black: #111318;
+  --text: #344054;
+  --text-secondary: #667085;
+
+  --border: #eaecf0;
+}

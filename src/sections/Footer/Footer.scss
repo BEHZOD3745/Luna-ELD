@@ -1,0 +1,43 @@
+@use "../../styles/variables"as *;
+@use "../../styles/mixins"as *;
+
+.footer {
+    padding-block: 32px;
+    border-top: 1px solid $border;
+    background: #fff;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 24px;
+    }
+
+    &__brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: $black;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+    }
+
+    &__logo {
+        width: 26px;
+        height: 26px;
+    }
+
+    &__copyright {
+        color: $text-muted;
+        font-size: 13px;
+    }
+
+    @include mobile {
+        &__inner {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}

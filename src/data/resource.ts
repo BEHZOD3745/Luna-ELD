@@ -1,6 +1,6 @@
-import userManualIcon from "../assets/icons/file.svg";
-import inspectionIcon from "../assets/icons/inspection.svg";
-import certificateIcon from "../assets/icons/certificate.svg";
+import userManualIcon from "../Assets/icons/file.svg";
+import inspectionIcon from "../Assets/icons/inspection.svg";
+import certificateIcon from "../Assets/icons/certificate.svg";
 
 export interface ResourceItem {
   id: string;

@@ -4,9 +4,9 @@ import Container from "../../components/Container";
 import SectionTitle from "../../components/SectionTitle";
 import Button from "../../components/Button";
 
-import mailIcon from "../../assets/icons/mail.svg";
-import phoneIcon from "../../assets/icons/phone.svg";
-import clockIcon from "../../assets/icons/clock.svg";
+import mailIcon from "../../Assets/icons/mail.svg";
+import phoneIcon from "../../Assets/icons/phone.svg";
+import clockIcon from "../../Assets/icons/clock.svg";
 
 import {
     sendContactForm,

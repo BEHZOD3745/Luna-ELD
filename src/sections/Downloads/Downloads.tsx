@@ -1,7 +1,4 @@
 
-
-
-
 import Container from "../../components/Container";
 import ResourceCard from "../../components/ResourceCard";
 import SectionTitle from "../../components/SectionTitle";

@@ -1,9 +1,9 @@
-import dashboardImage from "../../assets/images/dashboard/dashboard.png";
+import dashboardImage from "../../Assets/images/dashboard/dashboard.png";
 
 
-import gpsIcon from "../../assets/icons/gps.svg";
-import reportIcon from "../../assets/icons/report.svg";
-import inspectionIcon from "../../assets/icons/inspection.svg";
+import gpsIcon from "../../Assets/icons/gps.svg";
+import reportIcon from "../../Assets/icons/report.svg";
+import inspectionIcon from "../../Assets/icons/inspection.svg";
 
 import "./Dashboard.scss";
 import Container from "../../components/Container";

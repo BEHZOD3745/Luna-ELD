@@ -1,9 +1,9 @@
 
-import pt30Image from "../../assets/images/Device/pt30.png";
-import plugIcon from "../../assets/icons/plug.svg";
-import gpsIcon from "../../assets/icons/gps.svg";
-import bluetoothIcon from "../../assets/icons/bluetooth.svg";
-import durableIcon from "../../assets/icons/durable.svg";
+import pt30Image from "../../Assets/images/Device/pt30.png";
+import plugIcon from "../../Assets/icons/plug.svg";
+import gpsIcon from "../../Assets/icons/gps.svg";
+import bluetoothIcon from "../../Assets/icons/bluetooth.svg";
+import durableIcon from "../../Assets/icons/durable.svg";
 
 import "./EldDevice.scss";
 import Container from "../../components/Container";

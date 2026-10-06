@@ -1,6 +1,6 @@
 import Container from "../../components/Container";
 
-import lunaMark from "../../assets/icons/luna-mark.svg";
+import lunaMark from "../../Assets/icons/luna-mark.svg";
 
 import "./Footer.scss";
 

@@ -1,10 +1,10 @@
-import mobileHome from "../../assets/images/mobileApp/mobileHome.png";
-import mobileDrive from "../../assets/images/mobileApp/mobileDrive.png";
+import mobileHome from "../../Assets/images/mobileApp/mobileHome.png";
+import mobileDrive from "../../Assets/images/mobileApp/mobileDrive.png";
 
-import logsIcon from "../../assets/icons/logs.svg";
-import toggleIcon from "../../assets/icons/toggle.svg";
-import inspectionIcon from "../../assets/icons/inspection.svg";
-import uploadIcon from "../../assets/icons/upload.svg";
+import logsIcon from "../../Assets/icons/logs.svg";
+import toggleIcon from "../../Assets/icons/toggle.svg";
+import inspectionIcon from "../../Assets/icons/inspection.svg";
+import uploadIcon from "../../Assets/icons/upload.svg";
 
 import "./MobileApp.scss";
 import SectionTitle from "../../components/SectionTitle";

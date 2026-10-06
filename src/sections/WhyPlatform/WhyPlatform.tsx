@@ -3,9 +3,9 @@ import Container from "../../components/Container"
 import FeatureCard from "../../components/FeatureCard"
 import SectionTitle from "../../components/SectionTitle"
 
-import shieldIcon from "../../assets/icons/shield-check.svg";
-import visibilityIcon from "../../assets/icons/eye.svg";
-import usersIcon from "../../assets/icons/users.svg";
+import shieldIcon from "../../Assets/icons/shield-check.svg";
+import visibilityIcon from "../../Assets/icons/eye.svg";
+import usersIcon from "../../Assets/icons/users.svg";
 
 import "./WhyPlatform.scss"
 

@@ -1,4 +1,4 @@
-import downloadIcon from "../../assets/icons/download.svg";
+import downloadIcon from "../../Assets/icons/download.svg";
 import type { ResourceItem } from "../../data/resource";
 
 import "./ResourceCard.scss";

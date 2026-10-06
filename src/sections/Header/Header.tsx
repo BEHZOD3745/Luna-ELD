@@ -1,9 +1,9 @@
 
 import { useEffect, useState } from "react";
-import lunaMark from "../../assets/icons/luna-mark.svg";
-import monitorIcon from "../../assets/icons/monitor.svg";
-import logsIcon from "../../assets/icons/logs.svg";
-import plugIcon from "../../assets/icons/plug.svg";
+import lunaMark from "../../Assets/icons/luna-mark.svg";
+import monitorIcon from "../../Assets/icons/monitor.svg";
+import logsIcon from "../../Assets/icons/logs.svg";
+import plugIcon from "../../Assets/icons/plug.svg";
 import "./Header.scss";
 
 const navigation = [

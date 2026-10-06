@@ -1,7 +1,7 @@
 import downloadIcon from "../../Assets/icons/download.svg";
 import type { ResourceItem } from "../../data/resource";
 
-import "./ResourceCard.scss";
+import "./resourceCard.scss";
 
 interface ResourceCardProps {
     resource: ResourceItem;

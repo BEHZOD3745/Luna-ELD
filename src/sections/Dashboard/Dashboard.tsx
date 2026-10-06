@@ -1,4 +1,4 @@
-import dashboardImage from "../../Assets/images/dashboard/dashboard.png";
+import dashboardImage from "../../Assets/images/Dashboard/dashboard.png";
 
 
 import gpsIcon from "../../Assets/icons/gps.svg";

@@ -1,4 +1,4 @@
-import heroImage from "../../Assets/images/hero/hero.png";
+import heroImage from "../../Assets/images/Hero/hero.png";
 
 import Badge from "../../components/Badge";
 import Button from "../../components/Button";

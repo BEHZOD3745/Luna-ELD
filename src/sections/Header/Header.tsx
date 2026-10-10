@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import lunaMark from "../../Assets/icons/luna-mark.svg";
+import lunaMark from "../../Assets/icons/luna-mark.png";
 import monitorIcon from "../../Assets/icons/monitor.svg";
 import logsIcon from "../../Assets/icons/logs.svg";
 import plugIcon from "../../Assets/icons/plug.svg";
@@ -102,7 +102,6 @@ const Header = () => {
                     onClick={closeMenu}
                     aria-label="Luna ELD home">
                     <img src={lunaMark} alt="" className="header__logo-icon" />
-                    <span className="header__logo-text">Luna ELD</span>
                 </a>
                 <nav className="header__nav">
                     <div className="header__products">
@@ -113,7 +112,7 @@ const Header = () => {
                         >
                             Products
                             <span className="header__products-chevron">
-                                ↓
+                                ∨
                             </span>
                         </button>
                         <div className="header__dropdown">
@@ -156,7 +155,7 @@ const Header = () => {
                     ))}
                 </nav>
                 <div className="header__actions">
-                    <a href="#" className="header__login">Log In</a>
+                    <a href="https://staging.lunaeld.us/login" className="header__login" target="_blank">Log In</a>
                     <a href="#contact" className="header__cta">Get Started <span className="header__cta-arrow" aria-hidden="true"> → </span></a>
                 </div>
 
@@ -235,7 +234,8 @@ const Header = () => {
                     </nav>
                     <div className="header__mobile-actions">
                         <a
-                            href="#"
+                            href="https://staging.lunaeld.us/login"
+                            target="_blank"
                             className="header__mobile-login"
                             onClick={closeMenu}
                         >

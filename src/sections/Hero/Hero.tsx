@@ -1,4 +1,4 @@
-import heroImage from "../../Assets/images/hero/hero.png";
+import heroImage from "../../Assets/images/Hero/hero.png";
 
 import Badge from "../../components/Badge";
 import Button from "../../components/Button";
@@ -23,10 +23,10 @@ const Hero = () => {
             </Badge>
 
             <h1 className="hero__title">
-              Modern ELD platform
+              Simplyfy Every Mile with 
               <span>
                 {" "}
-                for smarter fleet management.
+                Luna ELD
               </span>
             </h1>
 

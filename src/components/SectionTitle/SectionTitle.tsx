@@ -26,7 +26,7 @@ const SectionTitle = ({
                 .join(" ")}
         >
             {eyebrow && (
-                <span className="section-ttile__eyebrow">
+                <span className="section-title__eyebrow">
                     {eyebrow}
                 </span>
             )}

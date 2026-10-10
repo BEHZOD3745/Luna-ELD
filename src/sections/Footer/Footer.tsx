@@ -1,6 +1,6 @@
 import Container from "../../components/Container";
 
-import lunaMark from "../../Assets/icons/luna-mark.svg";
+import lunaMark from "../../Assets/icons/luna-mark.png";
 
 import "./Footer.scss";
 
@@ -19,8 +19,6 @@ const Footer = () => {
               alt=""
               className="footer__logo"
             />
-
-            <span>Luna ELD</span>
           </a>
 
           <p className="footer__copyright">

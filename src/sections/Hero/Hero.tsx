@@ -23,10 +23,10 @@ const Hero = () => {
             </Badge>
 
             <h1 className="hero__title">
-              Modern ELD platform
+              Simplyfy Every Mile with 
               <span>
                 {" "}
-                for smarter fleet management.
+                Luna ELD
               </span>
             </h1>
 

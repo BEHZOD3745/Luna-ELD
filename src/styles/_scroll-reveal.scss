@@ -1,0 +1,20 @@
+@media (prefers-reduced-motion: no-preference) {
+  main > section.scroll-reveal-ready:not(.scroll-reveal-visible){
+    opacity: 0;
+    transform: translate3d(0, 72px, 0);
+    filter: blur(12px);
+  }
+
+  main > section.scroll-reveal-ready{
+    transition:
+      opacity 1000ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 1000ms cubic-bezier(0.16, 1, 0.3, 1),
+      filter 1000ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  main > section.scroll-reveal-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+}

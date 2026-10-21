@@ -43,7 +43,6 @@
 
     &__copy {
         max-width: 590px;
-        animation: hero-copy-in 0.8s $ease-out both;
     }
 
     &__title {
@@ -86,7 +85,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        animation: hero-image-in 1s $ease-out 0.08s both;
     }
 
     &__image {
@@ -96,14 +94,6 @@
         height: auto;
         object-fit: contain;
         filter: drop-shadow(0 28px 35px rgba(16, 24, 40, 0.12));
-        transition:
-            transform 0.5s $ease-out,
-            filter 0.5s $ease-out;
-
-        &:hover {
-            transform: translateY(-5px);
-            filter: drop-shadow(0 34px 45px rgba(16, 24, 40, 0.15));
-        }
     }
 
     @include desktop {
@@ -220,28 +210,56 @@
     }
 }
 
-@keyframes hero-copy-in {
-    from {
-        opacity: 0;
-        transform: translateY(24px);
-    }
+@media (prefers-reduced-motion: no-preference) {
+    .hero {
+        .badge {
+            animation: hero-reveal-down 700ms cubic-bezier(0.16, 1, 0.3, 1) 40ms both;
+        }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+        &__title {
+            animation: hero-reveal-down 900ms cubic-bezier(0.16, 1, 0.3, 1) 130ms both;
+        }
+
+        &__description {
+            animation: hero-reveal-down 850ms cubic-bezier(0.16, 1, 0.3, 1) 430ms both;
+        }
+
+        &__actions {
+            animation: hero-reveal-down 850ms cubic-bezier(0.16, 1, 0.3, 1) 580ms both;
+        }
+
+        &__visual {
+            animation: hero-image-rise-blur 1150ms cubic-bezier(0.16, 1, 0.3, 1) 150ms both;
+        }
     }
 }
 
-@keyframes hero-image-in {
+@keyframes hero-reveal-down {
     from {
         opacity: 0;
-        transform:
-            translateY(30px) scale(0.97);
+        clip-path: inset(0 0 100% 0);
+        filter: blur(7px);
+        transform: translate3d(0, 25px, 0);
     }
 
     to {
         opacity: 1;
-        transform:
-            translateY(0) scale(1);
+        clip-path: inset(0 0 0 0);
+        filter: blur(0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes hero-image-rise-blur {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 76px, 0);
+        filter: blur(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        filter: blur(0);
     }
 }

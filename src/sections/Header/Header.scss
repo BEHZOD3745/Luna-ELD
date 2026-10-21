@@ -112,6 +112,9 @@
         display: inline-block;
         font-size: 11px;
         transition: transform 0.2s ease;
+        width: 15px;
+        height: 15px;
+        opacity: 0.8;
     }
 
     &__dropdown {
@@ -217,7 +220,7 @@
         justify-content: center;
         gap: 8px;
         padding: $radius-sm;
-        background: $orange;
+        background: $orange-hover;
         border-radius: $radius-sm;
         color: #ffffff;
         font-size: 14px;
@@ -228,7 +231,7 @@
         transition: $transition-fast;
 
         &:hover {
-            background: $orange-hover;
+            background: $orange;
             transform: translateY(-2px);
             box-shadow:
                 0 2px 4px rgba(16, 24, 40, 0.05),

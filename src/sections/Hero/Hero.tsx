@@ -3,7 +3,7 @@ import heroImage from "../../Assets/images/Hero/hero.png";
 import Badge from "../../components/Badge";
 import Button from "../../components/Button";
 import Container from "../../components/Container";
-import TrustItem from "../../components/TrustItem";
+// import TrustItem from "../../components/TrustItem";
 
 import "./Hero.scss";
 
@@ -52,7 +52,7 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="hero__trust">
+            {/* <div className="hero__trust">
               <TrustItem>
                 FMCSA compliant
               </TrustItem>
@@ -64,7 +64,7 @@ const Hero = () => {
               <TrustItem>
                 Driver mobile app
               </TrustItem>
-            </div>
+            </div> */}
           </div>
 
           <div className="hero__visual">

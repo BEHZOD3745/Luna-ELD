@@ -15,11 +15,11 @@
   transition: 0.2s ease;
 
   &--primary {
-    background: $orange;
+    background: $orange-hover;
     color: #fff;
 
     &:hover {
-      background: $orange-hover;
+      background: $orange;
       transform: translateY(-2px);
     }
   }

@@ -4,6 +4,7 @@ import lunaMark from "../../Assets/icons/luna-mark.png";
 import monitorIcon from "../../Assets/icons/monitor.svg";
 import logsIcon from "../../Assets/icons/logs.svg";
 import plugIcon from "../../Assets/icons/plug.svg";
+import downChevron from "../../Assets/icons/down-chevron.svg";
 import "./Header.scss";
 
 const navigation = [
@@ -112,7 +113,7 @@ const Header = () => {
                         >
                             Products
                             <span className="header__products-chevron">
-                                ∨
+                                <img src={downChevron} alt="" />
                             </span>
                         </button>
                         <div className="header__dropdown">

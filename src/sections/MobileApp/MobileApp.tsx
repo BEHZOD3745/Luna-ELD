@@ -1,5 +1,4 @@
-import mobileHome from "../../Assets/images/mobileApp/mobileHome.png";
-import mobileDrive from "../../Assets/images/mobileApp/mobileDrive.png";
+import mobileTwo from "../../Assets/images/mobileApp/mobileUpdate.png";
 
 import logsIcon from "../../Assets/icons/logs.svg";
 import toggleIcon from "../../Assets/icons/toggle.svg";
@@ -47,8 +46,9 @@ const MobileApp = () => {
                 </div>
                 <div className="mobile-app__visual">
                     <div className="mobile-app__glow" />
-                    <img src={mobileHome} alt="Luna ELD driver mobile application home screen" className="mobile-app__phone mobile-app__phone--back"/>
-                    <img src={mobileDrive} alt="Luna ELD driver logs mobile application" className="mobile-app__phone mobile-app__phone--front"/>
+                    {/* <img src={mobileHome} alt="Luna ELD driver mobile application home screen" className="mobile-app__phone mobile-app__phone--back"/>
+                    <img src={mobileDrive} alt="Luna ELD driver logs mobile application" className="mobile-app__phone mobile-app__phone--front"/> */}
+                    <img src={mobileTwo} alt="Luna ELD driver logs mobile application" className="mobile-app__phone mobile-app__phone--front"/>
                 </div>
             </div>
         </Container>

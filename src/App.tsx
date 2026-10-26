@@ -25,7 +25,7 @@ function App() {
         entry.target.classList.add("scroll-reveal-visible");
         observer.unobserve(entry.target);
       });
-    }, { threshold: 0.06, rootMargin: "0px 0px -5% 0px" });
+    }, { threshold: 0.06, rootMargin: "0px 0px -20% 0px" });
 
     sections.forEach((section) => {
       section.classList.add("scroll-reveal-ready");

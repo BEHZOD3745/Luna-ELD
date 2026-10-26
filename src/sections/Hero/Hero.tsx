@@ -13,7 +13,12 @@ const Hero = () => {
       className="hero"
       id="hero"
     >
-      <div className="hero__glow" />
+      <div className="hero__glows" aria-hidden="true">
+        <span className="hero__glow hero__glow--one" />
+        <span className="hero__glow hero__glow--two" />
+        <span className="hero__glow hero__glow--three" />
+        <span className="hero__glow hero__glow--four" />
+      </div>
 
       <Container className="hero__container">
         <div className="hero__content">

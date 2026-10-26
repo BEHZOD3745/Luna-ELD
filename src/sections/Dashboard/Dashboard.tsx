@@ -16,7 +16,7 @@ const Dashboard = () => {
             <Container>
                 <div className="dashboard-section__layout">
                     <div className="dashboard-section__visual">
-                        <div className="dashboard-section__browser">
+                        {/* <div className="dashboard-section__browser">
                             <div className="dashboard-section__browser-bar">
                                 <div className="dashboard-section__browser-dots">
                                     <span></span>
@@ -27,8 +27,8 @@ const Dashboard = () => {
                                     app.lunaeld.com
                                 </div>
                             </div>
+                        </div> */}
                             <img src={dashboardImage} alt="Luna ELD fleet management dashboard" className="dashboard-section__image" />
-                        </div>
                     </div>
                     <div className="dashboard-section__content">
                         <SectionTitle

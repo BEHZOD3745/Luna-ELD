@@ -281,10 +281,7 @@ const Contact = () => {
 
                         <Button
                             type="submit"
-                            className={`contact__submit ${status === "success"
-                                    ? "button--success"
-                                    : ""
-                                }`}
+                            variant="success"
                             disabled={status === "loading"}
                         >
                             {getButtonText()}

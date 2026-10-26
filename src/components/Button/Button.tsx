@@ -3,7 +3,7 @@ import "./Button.scss";
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "success";
   className?: string;
 
   href?: string;

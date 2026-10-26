@@ -148,15 +148,6 @@
       opacity: 0.75;
       transform: none;
     }
-
-    &--success {
-      background: $success;
-
-      &:hover {
-        background: $success;
-        transform: none;
-      }
-    }
   }
 
   &__status {

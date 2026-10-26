@@ -282,7 +282,7 @@ const Contact = () => {
                         <Button
                             type="submit"
                             className={`contact__submit ${status === "success"
-                                    ? "contact__submit--success"
+                                    ? "button--success"
                                     : ""
                                 }`}
                             disabled={status === "loading"}

@@ -38,10 +38,10 @@
         height: auto;
         object-fit: contain;
         filter: drop-shadow( 0 28px 45px rgba(16, 24, 40, 0.16));
-        transition: 0.45s $ease-out;
+        transition: 0.7s $ease-out;
 
         &:hover {
-            transform: translateY(-6px) rotate(-10deg);
+            transform: translateY(-6px);
             filter: drop-shadow( 0 34px 55px rgba(16, 24, 40, 0.2));
         }
     }

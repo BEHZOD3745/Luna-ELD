@@ -26,19 +26,56 @@
         gap: 48px;
     }
 
+    &__glows {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
     &__glow {
         position: absolute;
+        display: block;
+        border-radius: 50%;
+        opacity: 0.9;
+        filter: blur(14px);
+        background: radial-gradient(circle,
+                rgba(255, 112, 41, 0.34) 0%,
+                rgba(255, 125, 59, 0.22) 32%,
+                rgba(255, 143, 85, 0.09) 57%,
+                rgba(255, 154, 103, 0) 78%);
+    }
+
+    &__glow--one {
         width: 760px;
         height: 760px;
-        right: -220px;
-        top: 50%;
-        transform: translateY(-50%);
-        border-radius: 50%;
-        background: radial-gradient(circle,
-                rgba(255, 100, 30, 0.13) 0%,
-                rgba(255, 100, 30, 0.06) 36%,
-                rgba(255, 100, 30, 0) 70%);
-        pointer-events: none;
+        top: 8%;
+        right: -250px;
+    }
+
+    &__glow--two {
+        width: 440px;
+        height: 440px;
+        top: -190px;
+        left: -230px;
+        opacity: 0.55;
+    }
+
+    &__glow--three {
+        width: 390px;
+        height: 390px;
+        bottom: 10px;
+        left: 24%;
+        opacity: 0.65;
+    }
+
+    &__glow--four {
+        width: 310px;
+        height: 310px;
+        bottom: 12%;
+        right: 85%;
+        opacity: 0.5;
     }
 
     &__copy {
@@ -94,6 +131,11 @@
         height: auto;
         object-fit: contain;
         filter: drop-shadow(0 28px 35px rgba(16, 24, 40, 0.12));
+        transition: 0.4s;
+
+        &:hover {
+                transform: translateY(-5px);
+            }
     }
 
     @include desktop {
@@ -145,10 +187,24 @@
         &__image {
             width: 100%;
             transform: none;
+        }
 
-            &:hover {
-                transform: translateY(-5px);
-            }
+         &__glow--one {
+            width: 580px;
+            height: 580px;
+            right: -220px;
+            top: 24%;
+        }
+
+        &__glow--two {
+            width: 360px;
+            height: 360px;
+        }
+
+        &__glow--three {
+            width: 340px;
+            height: 340px;
+            left: -90px;
         }
     }
 
@@ -204,6 +260,36 @@
             right: -250px;
         }
 
+        &__glow {
+            filter: blur(10px);
+        }
+
+        &__glow--one {
+            width: 380px;
+            height: 380px;
+            top: 24%;
+            right: -230px;
+        }
+
+        &__glow--two {
+            width: 260px;
+            height: 260px;
+            top: -115px;
+            left: -150px;
+            opacity: 0.45;
+        }
+
+        &__glow--three {
+            width: 280px;
+            height: 280px;
+            left: -145px;
+            bottom: -110px;
+        }
+
+        &__glow--four {
+            display: none;
+        }
+
         .badge {
             margin-bottom: 20px;
         }
@@ -212,6 +298,22 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .hero {
+        &__glow--one {
+            animation: hero-glow-float-one 17s ease-in-out infinite alternate;
+        }
+
+        &__glow--two {
+            animation: hero-glow-float-two 21s ease-in-out infinite alternate;
+        }
+
+        &__glow--three {
+            animation: hero-glow-float-three 19s ease-in-out infinite alternate;
+        }
+
+        &__glow--four {
+            animation: hero-glow-float-four 24s ease-in-out infinite alternate;
+        }
+
         .badge {
             animation: hero-reveal-down 700ms cubic-bezier(0.16, 1, 0.3, 1) 40ms both;
         }
@@ -237,14 +339,12 @@
 @keyframes hero-reveal-down {
     from {
         opacity: 0;
-        clip-path: inset(0 0 100% 0);
-        filter: blur(7px);
-        transform: translate3d(0, 25px, 0);
+        filter: blur(10px);
+        transform: translate3d(0, -25px, 0);
     }
 
     to {
         opacity: 1;
-        clip-path: inset(0 0 0 0);
         filter: blur(0);
         transform: translate3d(0, 0, 0);
     }
@@ -262,4 +362,19 @@
         transform: translate3d(0, 0, 0);
         filter: blur(0);
     }
+}
+
+@keyframes hero-glow-float-one {
+    from { transform: translate3d(0, 0, 0) scale(1); }
+    to { transform: translate3d(-48px, 36px, 0) scale(1.08); }
+}
+
+@keyframes hero-glow-float-two {
+    from { transform: translate3d(0, 0, 0) scale(1); }
+    to { transform: translate3d(56px, 32px, 0) scale(1.12); }
+}
+
+@keyframes hero-glow-float-three {
+    from { transform: translate3d(0, 0, 0) scale(1); }
+    to { transform: translate3d(-35px, -43px, 0) scale(1.07); }
 }

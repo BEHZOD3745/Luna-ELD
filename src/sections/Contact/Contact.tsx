@@ -94,7 +94,7 @@ const Contact = () => {
                 return "Try Again";
 
             default:
-                return "Send Message →";
+                return "Send Message";
         }
     };
 

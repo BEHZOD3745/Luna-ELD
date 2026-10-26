@@ -281,7 +281,7 @@ const Contact = () => {
 
                         <Button
                             type="submit"
-                            variant="success"
+                            className="contact__submit"
                             disabled={status === "loading"}
                         >
                             {getButtonText()}

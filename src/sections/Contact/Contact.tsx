@@ -212,6 +212,7 @@ const Contact = () => {
                                 <input
                                     id="company"
                                     name="company"
+                                    required
                                     type="text"
                                     value={formData.company}
                                     onChange={handleChange}
@@ -232,11 +233,11 @@ const Contact = () => {
                                     id="email"
                                     name="email"
                                     type="email"
+                                    required
                                     value={formData.email}
                                     onChange={handleChange}
                                     placeholder="you@company.com"
                                     autoComplete="email"
-                                    required
                                     disabled={status === "loading"}
                                 />
                             </div>
@@ -251,6 +252,7 @@ const Contact = () => {
                                     name="phone"
                                     type="tel"
                                     value={formData.phone}
+                                    required
                                     onChange={handleChange}
                                     placeholder="+1 (555) 123-4567"
                                     autoComplete="tel"
@@ -280,7 +282,7 @@ const Contact = () => {
                         <Button
                             type="submit"
                             className={`contact__submit ${status === "success"
-                                    ? "contact__submit--success"
+                                    ? "button--success"
                                     : ""
                                 }`}
                             disabled={status === "loading"}

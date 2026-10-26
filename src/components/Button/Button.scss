@@ -81,4 +81,12 @@
     opacity: 0.6;
     transform: none;
   }
+
+  &--success {
+      background: $success;
+
+      &:hover .button::after {
+        opacity: 0;
+      }
+  }
 }
